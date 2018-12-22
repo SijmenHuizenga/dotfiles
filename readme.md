@@ -55,6 +55,7 @@ yay -S powerline-fonts-git i3-lock-fancy-rapid-git oh-my-zsh-git antigen-git jet
 ##### System things
 ```
 ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
+sudo hwclock --systohc
 
 wget -O /tmp/mirrorlist https://www.archlinux.org/mirrorlist/?country=NL&protocol=https
 # replace '#Server' with 'Server' in the tmp file
@@ -62,5 +63,10 @@ rankmirrors -n 6 /tmp/mirrorlist > /etc/pacman.d/mirrorlist
 rm /tmp/mirrorlist
 pacman -Sy
 
-chsh -s /bin/zsh
+chsh -s /bin/zsh sijmen
+
+nano /etc/locale.gen
+# uncomment #en_US.UTF-8 UTF-8
+locale-gen
+
 ```
