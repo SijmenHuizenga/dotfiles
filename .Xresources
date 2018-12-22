@@ -1,0 +1,6 @@
+UXTerm*font:                 xft:DejaVu Sans Mono for Powerline:pixelsize=14
+UXTerm*boldFont:             xft:Inconsolata Bold for Powerline:pixelsize=14
+UXTerm*selectToClipboard:true
+
+#include ".config/xterm/dark"
+! #include ".config/xterm/light"
