@@ -38,6 +38,20 @@ bindsym $mod+Escape kill
 # shutdown system immediately
 bindsym $mod+Shift+s exec shutdown 0
 
+# Lockscreen
+bindsym $mod+p exec i3lock-fancy-rapid 5 5
+
+# Backlight for on Laptops
+bindsym $mod+Ctrl+Up exec sudo xbacklight -inc 5
+bindsym $mod+Ctrl+Down exec sudo xbacklight -dec 5
+
+# Docking and Undocking for on laptops
+bindsym $mod+i exec /home/sijmen/.bin/dock
+bindsym $mod+Shift+i exec /home/sijmen/.bin/dock-dup
+bindsym $mod+o exec /home/sijmen/.bin/undock
+
+
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -173,4 +187,4 @@ bar {
 }
 
 exec --no-startup-id nm-applet --sm-disable
-exec --no-startup-id pa-applet 
+exec --no-startup-id pasystray

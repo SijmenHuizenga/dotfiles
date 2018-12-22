@@ -8,17 +8,29 @@ antigen bundle command-not-found
 antigen bundle history
 antigen bundle sudo
 antigen bundle common-aliases
-
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
-
-antigen theme agnoster
-
-antigen apply
+export GNUPGHOME=$HOME/.ssh/gpg
 
 export LANG=en_US.UTF-8
 export VISUAL=nano
 export EDITOR="$VISUAL"
+export DEFAULT_USER="sijmen"
+export npm_config_prefix=~/.npm
 export GOPATH="$HOME/.go"
+
+export PATH="$HOME/.npm/bin:$PATH"
+export PATH="$HOME/allez/ops-tools/bin:$PATH"
+export PATH="$HOME/.go/bin:$PATH"
+export PATH=$HOME/.bin:/usr/local/bin:$PATH
+
+alias tf=terraform
+alias tfi="tf init"
+alias tfa="tf apply"
+alias tfp="tf plan"
+
+antigen theme agnoster
+antigen apply
+
+xset b off
