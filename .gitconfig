@@ -1,0 +1,6 @@
+[user]
+    email = sijmenhuizenga@gmail.com
+    name = sijmenhuizenga
+
+[includeIf "gitdir:~/avisi/"]
+    path = ~.gitconfig-avisi

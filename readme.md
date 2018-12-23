@@ -12,6 +12,7 @@
 * File management
   * vifm (command line file browser)
   * udisks (manage removeable media)
+  * ncdu (analyze disk usage)
 * Image
   * feh Quick image viewer
   * scrot (quick screenshot)
@@ -31,7 +32,7 @@ chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-
 xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk 
 openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src 
 xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm  
-pacman-contrib vlc
+pacman-contrib vlc numlockx ncdu
 ```
 
 ##### add Sijmen user
@@ -69,5 +70,19 @@ chsh -s /bin/zsh sijmen
 nano /etc/locale.gen
 # uncomment #en_US.UTF-8 UTF-8
 locale-gen
-
 ```
+
+
+##### Auto Login
+```
+sudo mkdir /etc/systemd/system/getty@tty1.service.d/
+sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
+```
+Add the following:
+```
+[Service]
+Type=simple
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin sijmen --noclear %I $TERM
+```
+Now just restart and you should be logged in automagicly

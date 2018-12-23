@@ -1,0 +1,16 @@
+Stacking          $+s
+Tabbed            $+w
+Split (toggle)    $+e
+Float (toggle)    $+Shift+Space
+
+Focus parent      $+a
+Focus child       $+d
+
+i3 restart        $+Shift+r
+i3 reload         $+Shift+c
+i3 exit           $+Shift+e
+
+Dock              $+i
+Undock            $+o
+Dock Beamer       $+Shift+i
+
