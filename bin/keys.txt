@@ -14,3 +14,30 @@ Dock              $+i
 Undock            $+o
 Dock Beamer       $+Shift+i
 
+git status        gs
+git add -A        gaa
+git commit -m     gcm
+
+
+
+
+Delete file       dd
+Media menu        :media
+  mount (toggle)  m
+Copy/Move start   yy
+Copy here         p
+Move here         Shift+p
+Filter            =filter
+
+Select single         t
+Select range start    av
+Select range confirm  Enter
+Select range end      v
+
+Change file           c+...
+
+
+
+
+ncdu    analyze disk usage
+yay     aur package manager

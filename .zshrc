@@ -30,6 +30,11 @@ alias tfi="tf init"
 alias tfa="tf apply"
 alias tfp="tf plan"
 
+alias g=git
+alias gs="git status"
+alias gaa="git add -A"
+alias gcm="git commit -m "
+
 antigen theme agnoster
 antigen apply
 
