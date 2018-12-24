@@ -30,14 +30,30 @@ In this repo you find my computer setup. It contains installation instructions, 
 
 ##### Install system packages
 ```
-pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr ttf-roboto chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-crosore ttf-bitstream-vera xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh
+pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr ttf-roboto chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-crosore ttf-bitstream-vera xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh docker
 ```
 
 ##### add Sijmen user
 ```
-groupadd sudo
 useradd -m sijmen
-chpasswd
+chpasswd sijmen
+```
+
+##### Setup sudo 
+```
+groupadd sudo
+usermod -a -G sudo sijmen
+usermod -a -G docker sijmen
+nano /etc/sudoers
+
+# Add to allow members of group sudo to exec any commmand
+%sudo   ALL=(ALL) ALL
+
+# Add to allow sijmen run sudo without password
+sijmen ALL=(ALL) NOPASSWD: ALL
+
+# Disable root login
+passwd -l root
 ```
 
 ##### Install packages from arch user repository
@@ -69,7 +85,6 @@ nano /etc/locale.gen
 # uncomment #en_US.UTF-8 UTF-8
 locale-gen
 ```
-
 
 ##### Auto Login
 ```
