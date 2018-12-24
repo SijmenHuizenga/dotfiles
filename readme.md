@@ -13,6 +13,7 @@
   * vifm (command line file browser)
   * udisks (manage removeable media)
   * ncdu (analyze disk usage)
+  * pmount (mounting encrypted media)
 * Image
   * feh Quick image viewer
   * scrot (quick screenshot)
@@ -32,7 +33,7 @@ chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-
 xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk 
 openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src 
 xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm  
-pacman-contrib vlc numlockx ncdu
+pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh
 ```
 
 ##### add Sijmen user
@@ -51,7 +52,7 @@ sudo chown sijmen:root .
 git clone https://aur.archlinux.org/yay.git .
 makepkg -si
 
-yay -S powerline-fonts-git i3-lock-fancy-rapid-git oh-my-zsh-git antigen-git jetbrains-toolbox udevil-git
+yay -S powerline-fonts-git i3-lock-fancy-rapid-git oh-my-zsh-git antigen-git jetbrains-toolbox udevil-git pmount
 ```
 
 ##### System things
@@ -86,3 +87,17 @@ ExecStart=
 ExecStart=-/usr/bin/agetty --autologin sijmen --noclear %I $TERM
 ```
 Now just restart and you should be logged in automagicly
+
+##### Keys setup
+```
+keybase login
+systemctl start --user keybase
+systemctl enable --user keybase
+mkdir .secrets
+keybase config set mountdir /home/sijmen/.secrets
+systemctl start --user kbfs
+systemctl enable --user kbfs
+gpg --import /home/sijmen/.secrets/private/sijmenhuizenga/pgp/sijmenhuizenga.pub
+gpg --import /home/sijmen/.secrets/private/sijmenhuizenga/pgp/sijmenhuizenga.asc
+```
+

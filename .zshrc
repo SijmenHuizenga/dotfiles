@@ -11,7 +11,6 @@ antigen bundle common-aliases
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 export ZSH=$HOME/.oh-my-zsh
-export GNUPGHOME=$HOME/.ssh/gpg
 
 export LANG=en_US.UTF-8
 export VISUAL=nano

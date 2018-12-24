@@ -1,6 +1,10 @@
 [user]
     email = sijmenhuizenga@gmail.com
     name = sijmenhuizenga
+    signingkey = D684E37FAF602F6F
 
 [includeIf "gitdir:~/avisi/"]
     path = ~.gitconfig-avisi
+
+[commit]
+    gpgsign = true

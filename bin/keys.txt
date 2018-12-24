@@ -39,5 +39,7 @@ Change file           c+...
 
 
 
-ncdu    analyze disk usage
-yay     aur package manager
+ncdu        analyze disk usage
+yay         aur package manager
+pmount dev  mount (encrypted) volume to /media
+pumount dev umount (encrypted) volume
