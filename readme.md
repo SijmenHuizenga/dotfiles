@@ -65,7 +65,7 @@ sudo chown sijmen:root .
 git clone https://aur.archlinux.org/yay.git .
 makepkg -si
 
-yay -S powerline-fonts-git i3-lock-fancy-rapid-git oh-my-zsh-git antigen-git jetbrains-toolbox udevil-git pmount
+yay -S powerline-fonts-git i3-lock-fancy-rapid-git oh-my-zsh-git antigen-git jetbrains-toolbox udevil-git pmount direnv
 ```
 
 ##### System things
