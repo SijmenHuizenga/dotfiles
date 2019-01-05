@@ -1,1 +1,1 @@
-rdesktop -g 100% -r sound:local -K -P -z -x l -u sijmen $1:3389
+rdesktop -g 100% -r sound:local -K -P -z -x l -u sijmen w10.wolkje.lan:3389

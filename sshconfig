@@ -1,0 +1,23 @@
+Compression yes
+ServerAliveInterval 60
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+ForwardAgent yes
+LogLevel ERROR
+
+Host *sbp.avisi.nl
+    User sijhuize
+    IdentityFile ~/.ssh/avisi-sijmenhuizenga
+
+Host bastion*.allez.cloud
+   User sijhuize
+   IdentityFile ~/.ssh/avisi-sijmenhuizenga2
+
+Host insight.avisi.nl bitbucket.org
+   IdentityFile ~/.ssh/avisi-sijmenhuizenga2
+
+Host *allez.int
+   User core
+
+Host *
+    IdentityFile ~/.ssh/sijmenhuizenga
