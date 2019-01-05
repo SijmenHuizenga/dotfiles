@@ -116,7 +116,8 @@ systemctl enable --user kbfs
 ##### VPN Setup
 
 **wolkje** 
-1. Download file from vpn server /home/sijmen/ovpns/xxx.ovpn
+0. Generate client file on vpn server using `pivpn add nopass` and user the devices hostname as client name
+1. Download file from vpn server /home/sijmen/ovpns/xxx.ovpn to `~/.secrets/private/sijmenhuizenga/wolkje-vpn/hostname.ovpn`
 2. Install client (`sudo pacman -S openvpn`)
 3. Install dns setup thingy (`yay -S openvpn-update-resolv-conf-git`)
 4. Add the following lines to the ovpn file if you want dns support:
@@ -126,4 +127,4 @@ dhcp-option DNS 10.11.12.1
 up /etc/openvpn/update-resolv-conf
 down /etc/openvpn/update-resolv-conf
 ````
-5. Run `sudo openvpn ./raampje.ovpn`
+5. Run wolkje-vpn
