@@ -1,0 +1,5 @@
+cp ~/.secrets/private/sijmenhuizenga/wolkje-vpn/$(hostname).ovpn /tmp/client.ovpn
+chmod 644 /tmp/client.ovpn
+sudo openvpn /tmp/client.ovpn
+rm /tmp/client.ovpn
+

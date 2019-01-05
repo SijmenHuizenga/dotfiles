@@ -30,7 +30,7 @@ In this repo you find my computer setup. It contains installation instructions, 
 
 ##### Install system packages
 ```
-pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr ttf-roboto chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-crosore ttf-bitstream-vera xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh docker ripgrep
+pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr ttf-roboto chromium firefox noto-fonts dmenu xorg-fonts-encodings ttf-droid ttf-dejavu ttf-crosore ttf-bitstream-vera xorg-fonts-alias font-bh-ttf dina-font artwiz-fonts tamsym-font terminus-font zsh tree powerline jdk10-openjdk openjdk10-doc  openjdk10-src jre8-openjdk  openjdk8-doc openjdk8-src  jdk-openjdk   openjdk-doc  openjdk-src xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh docker tar zip dnsutils nfs-utils ripgrep
 ```
 
 ##### add Sijmen user
@@ -113,3 +113,18 @@ systemctl enable --user kbfs
 ./sync-keys.sh
 ```
 
+##### VPN Setup
+
+**wolkje** 
+0. Generate client file on vpn server using `pivpn add nopass` and user the devices hostname as client name
+1. Download file from vpn server /home/sijmen/ovpns/xxx.ovpn to `~/.secrets/private/sijmenhuizenga/wolkje-vpn/hostname.ovpn`
+2. Install client (`sudo pacman -S openvpn`)
+3. Install dns setup thingy (`yay -S openvpn-update-resolv-conf-git`)
+4. Add the following lines to the ovpn file if you want dns support:
+````
+script-security 2
+dhcp-option DNS 10.11.12.1
+up /etc/openvpn/update-resolv-conf
+down /etc/openvpn/update-resolv-conf
+````
+5. Run wolkje-vpn
