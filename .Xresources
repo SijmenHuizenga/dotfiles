@@ -1,6 +1,7 @@
 UXTerm*font:                 xft:Roboto Mono Medium for Powerline:pixelsize=13
 UXTerm*boldFont:             xft:Roboto Mono Bold for Powerline:pixelsize=13
 UXTerm*selectToClipboard:true
+UXTerm*saveLines: 12345
 
 #include ".config/xterm/dark"
 !#include ".config/xterm/light"

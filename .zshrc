@@ -37,4 +37,8 @@ alias gcm="git commit -m "
 antigen theme agnoster
 antigen apply
 
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 xset b off
+
+eval "$(direnv hook zsh)"
