@@ -62,8 +62,9 @@ bindsym $mod+i exec /home/sijmen/.bin/dock
 bindsym $mod+Shift+i exec /home/sijmen/.bin/dock-dup
 bindsym $mod+o exec /home/sijmen/.bin/undock
 
-# Always float cheet sheet
+# Always float some windows
 for_window [title="cheat"] [class="feh"] floating enable, move position center, focus
+for_window [title="Volume Control"] floating enable, move position right, focus
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -205,5 +206,5 @@ exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id pasystray
 exec --no-startup-id i3-msg 'workspace 2; exec chromium'
 exec --no-startup-id i3lock-fancy-rapid 5 5
-
+exec --no-startup-id redshift
 
