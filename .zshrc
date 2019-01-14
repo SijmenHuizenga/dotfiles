@@ -18,10 +18,12 @@ export EDITOR="$VISUAL"
 export DEFAULT_USER="sijmen"
 export npm_config_prefix=~/.npm
 export GOPATH="$HOME/.go"
+export GRIS_ROOT="/home/sijmen/avisi"
+export GPG_TTY=$(tty)
 
 export PATH="$HOME/.npm/bin:$PATH"
-export PATH="$HOME/avisi/allez/tools/ops-tools/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
+export PATH="$HOME/avisi/allez/tools/ops-tools/bin:$PATH"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 alias tf=terraform
