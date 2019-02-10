@@ -1,0 +1,18 @@
+set -euo pipefail
+
+case "$1" in
+        mount)
+            sudo mkdir -p /mnt/wolkje-ssd
+            sudo mount storage.wolkje.lan:/mnt/ssd /mnt/wolkje-ssd
+            echo "ssd cluster mounted on /mnt/wolkje-ssd"
+            ;;
+         
+        unmount )
+            sudo umount /mnt/wolkje-ssd
+            echo "unmounted /mnt/wolkje-ssd"
+            ;;
+                 
+        *)
+            echo $"Usage: wolkje-nfs {mount|unmount}"
+            exit 1
+esac
