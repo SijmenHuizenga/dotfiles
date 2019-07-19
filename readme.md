@@ -105,7 +105,7 @@ Now just restart and you should be logged in automagicly
 keybase login
 systemctl start --user keybase
 systemctl enable --user keybase
-mkdir .secrets
+mkdir ~/.secrets
 keybase config set mountdir /home/sijmen/.secrets
 systemctl start --user kbfs
 systemctl enable --user kbfs
