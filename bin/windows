@@ -1,1 +1,0 @@
-rdesktop -r sound:local -K -P -z -x l -u sijmen w10.wolkje.lan:3389
