@@ -1,2 +1,2 @@
-xrandr --output DP-2 --off --output DP-2 --auto
-xrandr --output DP-1 --off --output DP-1 --auto
+xrandr --output DP2 --off --output DP2 --auto
+xrandr --output DP1 --off --output DP1 --auto

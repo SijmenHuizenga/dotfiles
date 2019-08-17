@@ -202,9 +202,7 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id pasystray
 exec --no-startup-id i3-msg 'workspace 2; exec chromium'
 exec --no-startup-id i3lock-fancy-rapid 5 5
-exec --no-startup-id redshift
 

@@ -26,6 +26,7 @@ export PATH="$HOME/.go/bin:$PATH"
 export PATH="$HOME/avisi/allez/tools/ops-tools/bin:$PATH"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$PATH"
 
 alias tf=terraform
 alias tfi="tf init"
@@ -43,5 +44,3 @@ antigen apply
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 xset b off
-
-eval "$(direnv hook zsh)"
