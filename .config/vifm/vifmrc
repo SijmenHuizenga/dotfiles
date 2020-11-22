@@ -443,15 +443,15 @@ nnoremap <f8> :delete<cr>
 
 " ------------------------------------------------------------------------------
 
-nnoremap l <up>
-nnoremap k <down>
-nnoremap j <left>
-nnoremap ; <right>
+nnoremap k <up>
+nnoremap j <down>
+nnoremap h <left>
+nnoremap l <right>
 
-vnoremap l <up>
-vnoremap k <down>
-vnoremap j <left>
-vnoremap ; <right>
+vnoremap k <up>
+vnoremap j <down>
+vnoremap h <left>
+vnoremap l <right>
 
 " Various customization examples
 

@@ -1,5 +1,6 @@
 Compression yes
-ServerAliveInterval 60
+ServerAliveInterval 1
+ServerAliveCountMax 5
 StrictHostKeyChecking no
 UserKnownHostsFile /dev/null
 LogLevel ERROR

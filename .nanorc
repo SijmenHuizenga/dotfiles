@@ -1,2 +1,2 @@
 set nowrap
-include /usr/share/nano/*
+include "/usr/share/nano/*.nanorc"
