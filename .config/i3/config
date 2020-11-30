@@ -50,12 +50,11 @@ bindsym Ctrl+Print exec gscreenshot
 # screenshot
 bindsym Print exec scrot -e 'mv $f ~/Downloads/'
 
-# Cheet Sheet
-bindsym $mod+question exec /home/sijmen/bin/cheetsheet.sh
-
 # Backlight for on Laptops
 bindsym $mod+Ctrl+Up exec sudo xbacklight -inc 5
 bindsym $mod+Ctrl+Down exec sudo xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 # Docking and Undocking for on laptops
 bindsym $mod+i exec /home/sijmen/.bin/dock
@@ -68,6 +67,7 @@ bindsym $mod+x exec i3-msg move workspace to output left
 # Always float some windows
 for_window [title="cheat"] [class="feh"] floating enable, move position center, focus
 for_window [title="Volume Control"] floating enable, move position right, focus
+for_window [title="gscreenshot"] floating enable, move position right, focus
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
