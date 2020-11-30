@@ -78,6 +78,7 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Inline suggestions
+# Install yay -S zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=059"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion) # Prefere history suggestions 

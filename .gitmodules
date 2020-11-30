@@ -1,3 +1,6 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "xrandr-brightness-script"]
+	path = xrandr-brightness-script
+	url = https://github.com/philippnormann/xrandr-brightness-script.git

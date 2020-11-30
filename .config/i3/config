@@ -50,11 +50,11 @@ bindsym Ctrl+Print exec gscreenshot
 # screenshot
 bindsym Print exec scrot -e 'mv $f ~/Downloads/'
 
-# Backlight for on Laptops
-bindsym $mod+Ctrl+Up exec sudo xbacklight -inc 5
-bindsym $mod+Ctrl+Down exec sudo xbacklight -dec 5
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+# Brightness controll for laptops
+bindsym $mod+Ctrl+Up exec /home/sijmen/dotfiles/bin/brightness.sh inc
+indsym XF86MonBrightnessUp exec /home/sijmen/dotfiles/bin/brightness.sh inc
+bindsym $mod+Ctrl+Down exec /home/sijmen/dotfiles/bin/brightness.sh dec
+bindsym XF86MonBrightnessDown exec /home/sijmen/dotfiles/bin/brightness.sh dec
 
 # Docking and Undocking for on laptops
 bindsym $mod+i exec /home/sijmen/.bin/dock

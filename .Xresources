@@ -7,21 +7,22 @@
 URxvt.utf8: true
 URxvt.locale: true
 
+Xft.dpi: 150
 
 !# Font downloaded from https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/RobotoMono
 !# and placed in /usr/share/fonts/TTF
 !# based on https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=nerd-fonts-dejavu-complete
 URxvt*font:                 xft:RobotoMono Nerd Font:style=Regular
 !URxvt.imfont:              xft:RobotoMono Nerd Font:style=Regular
-URxvt*boldFont:             xft:RobotoMono Nerd Font:style=Bold
-URxvt*italicFont:           xft:RobotoMono Nerd Font:style=Italic
-URxvt*boldItalicFont:       xft:RobotoMono Nerd Font:style=Bold Italic
+!URxvt*boldFont:             xft:RobotoMono Nerd Font:style=Bold
+!URxvt*italicFont:           xft:RobotoMono Nerd Font:style=Italic
+!URxvt*boldItalicFont:       xft:RobotoMono Nerd Font:style=Bold Italic
 
-URxvt*font:                 xft:Roboto Mono for Powerline:style=Regular,xft:RobotoMono Nerd Font:style=Regular
-URxvt.imfont:               xft:Roboto Mono for Powerline:style=Regular,xft:RobotoMono Nerd Font:style=Regular
-URxvt*boldFont:             xft:Roboto Mono for Powerline:style=Bold,xft:RobotoMono Nerd Font:style=Regular
-URxvt*italicFont:           xft:Roboto Mono for Powerline:style=Italic,xft:RobotoMono Nerd Font:style=Regular
-URxvt*boldItalicFont:       xft:Roboto Mono for Powerline:style=Bold Italic,xft:RobotoMono Nerd Font:style=Regular
+!URxvt*font:                 xft:Roboto Mono for Powerline:style=Regular,xft:RobotoMono Nerd Font:style=Regular
+!URxvt.imfont:               xft:Roboto Mono for Powerline:style=Regular,xft:RobotoMono Nerd Font:style=Regular
+!URxvt*boldFont:             xft:Roboto Mono for Powerline:style=Bold,xft:RobotoMono Nerd Font:style=Regular
+!URxvt*italicFont:           xft:Roboto Mono for Powerline:style=Italic,xft:RobotoMono Nerd Font:style=Regular
+!URxvt*boldItalicFont:       xft:Roboto Mono for Powerline:style=Bold Italic,xft:RobotoMono Nerd Font:style=Regular
 
 
 URxvt.selectToClipboard:true
