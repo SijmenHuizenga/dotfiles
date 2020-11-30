@@ -30,7 +30,7 @@ In this repo you find my computer setup. It contains installation instructions, 
 
 ##### Install system packages
 ```
-pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr chromium firefox dmenu zsh tree xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gscreenshot gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh docker tar zip dnsutils nfs-utils ripgrep zsh-syntax-highlighting pkgfile xrvt
+pacman -Suyy htop wget base-devel git sudo i3-wm go i3status xorg-server xf86-video-intel xorg-xrandr chromium firefox dmenu zsh tree xorg-xbacklight scrot feh vim vifm pulseaudio pasystray pavucontrol gimp pinta nodejs npm pacman-contrib vlc numlockx ncdu keybase keybase-gui kbfs rsync openssh docker tar zip dnsutils nfs-utils ripgrep zsh-syntax-highlighting pkgfile uxrvt
 ```
 
 ```
@@ -73,7 +73,7 @@ sudo chown sijmen:root .
 git clone https://aur.archlinux.org/yay.git .
 makepkg -si
 
-yay -S i3-lock-fancy-rapid-git jetbrains-toolbox udevil-git pmount direnv command-not-found
+yay -S i3lock-fancy-rapid-git jetbrains-toolbox udevil-git pmount direnv command-not-found gscreenshot
 ```
 
 ##### System things
