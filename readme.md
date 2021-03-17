@@ -73,7 +73,7 @@ sudo chown sijmen:root .
 git clone https://aur.archlinux.org/yay.git .
 makepkg -si
 
-yay -S i3lock-fancy-rapid-git jetbrains-toolbox udevil-git pmount direnv command-not-found gscreenshot
+yay -S i3lock-fancy-rapid-git jetbrains-toolbox udevil-git pmount direnv command-not-found gscreenshot urxvt-resize-font-git
 ```
 
 ##### System things
