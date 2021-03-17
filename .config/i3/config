@@ -52,7 +52,7 @@ bindsym Print exec scrot -e 'mv $f ~/Downloads/'
 
 # Brightness controll for laptops
 bindsym $mod+Ctrl+Up exec /home/sijmen/dotfiles/bin/brightness.sh inc
-indsym XF86MonBrightnessUp exec /home/sijmen/dotfiles/bin/brightness.sh inc
+bindsym XF86MonBrightnessUp exec /home/sijmen/dotfiles/bin/brightness.sh inc
 bindsym $mod+Ctrl+Down exec /home/sijmen/dotfiles/bin/brightness.sh dec
 bindsym XF86MonBrightnessDown exec /home/sijmen/dotfiles/bin/brightness.sh dec
 
